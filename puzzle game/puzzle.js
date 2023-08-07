@@ -1,5 +1,5 @@
 var puzzles = [
-    ["14", "9", "10", "15", "13", "7", "3", "5", "6"],
+    ["./images/14", "./images/9", "./images/10", "./images/15", "./images/13", "./images/7", "./images/3", "./images/5", "./images/6"],
     // Add more puzzles here
   ];
 
@@ -70,6 +70,11 @@ var puzzles = [
 
     currTile.src = otherImg;
     otherTile.src = currImg;
+
+    // Play the sound
+  var moveSound = document.getElementById("moveSound");
+  moveSound.play();
+
 
     turns += 1;
     document.getElementById("turns").innerText = "Turns: " + turns;
